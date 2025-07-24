@@ -27,36 +27,7 @@
 - Python 3.8 or higher
 - Git (for cloning the repository)
 
-### Installation
-
-
-1. **Clone the Repository**:
-
-```bash
-git clone https://github.com/Syeda-Aliza-Ayaz/FocusForge---CS50P-Final-Project.git
-cd FocusForge---CS50P-Final-Project
-```
-
-
-2. **Create a Virtual Environment (recommended)**:
-
-For **Windows**:
-```bash
-python -m venv venv
-source venv\Scripts\activate
-```
-
-For **Linux/MacOS**:
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-3. **Install Dependencies**:
-
-```bash
-pip install -r requirements.txt
-```
+## Install Testing Dependencies:
 
 The requirements.txt file includes libraries such as pyfiglet, colorama, playsound, and pytest.
 
@@ -116,39 +87,36 @@ Enter your note: Review README for submission
 ## 🧪 Running Tests
 Unit tests for task management, habit tracking, and notes are included in `test_project.py` using pytest.
 
-
 ## Install Testing Dependencies:
-
-```bash
-pip install pytest
-```
-
+    ```bash
+    pip install pytest
+    ```
+    
 ### Run Tests:
-
-```bash
-pytest test_project.py -v
-```
-
+    ```bash
+    pytest test_project.py -v
+    ```
+    
 Expected Output: Tests verify core functionality (e.g., adding tasks, tracking habits). All tests should pass if the app is working correctly.
 Note: Ensure the /data directory exists, as some tests may interact with stored files. Moreover, if you want to run tests more than once, make sure to either change the arguments of the first tests of every function, or remove the tasks and habits added by running `pytest`, else the tests might fail.
 
 ## 📂 File Structure
-
-```text
-FocusForge/
-│  
-├── project.py                    # Main app logic
-├── test_project.py               # Unit tests with pytest
-├── requirements.txt              # Dependencies list
-│  
-├── data/                        # Stores JSON and text files
-│   ├── tasks.json               # Task data
-│   ├── habits.json              # Habit history
-│   └── notes.txt                # Notes
-│  
-├── sound/                       # Audio alert
-│   └── melodic-race-countdown.wav  # Pomodoro completion sound
-```
+    ```text
+    FocusForge/  
+    │  
+    ├── project.py                    # Main app logic  
+    ├── test_project.py              # Unit tests with pytest  
+    ├── requirements.txt             # Dependencies list  
+    │  
+    ├── data/                        # Stores JSON and text files  
+    │   ├── tasks.json              # Task data  
+    │   ├── habits.json             # Habit history  
+    │   └── notes.txt               # Notes  
+    │  
+    ├── sound/                       # Audio alert  
+    │   └── melodic-race-countdown.wav  # Pomodoro completion sound  
+    ```
+    
 ## 📄 License  
 - This project is licensed under the MIT License. See the LICENSE file for details.
 
