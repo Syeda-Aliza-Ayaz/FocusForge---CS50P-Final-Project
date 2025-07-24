@@ -231,10 +231,10 @@ def start_timer():
     except ValueError:
         return (Fore.RED + Style.BRIGHT + Back.WHITE + "❌ Invalid input. Please enter a valid number.")
     print()
-    # print(Fore.MAGENTA + Style.BRIGHT + f"🍅 Starting your {timer}-minute Pomodoro session. Focus mode: ON  🔒\n") ## this is the actual line for a full Pomodoro session
-    print(Fore.MAGENTA + Style.BRIGHT + f"🍅 Starting your 10 seconds Pomodoro session. Focus mode: ON  🔒\n") ## to save time during demonstration video, this line is uncommented
-    for remaining in range(10, -1, -1): ## to save time during demonstration video, this line is uncommented
-    # for remaining in range(timer * 60, -1, -1): ## this is the actual line for a full Pomodoro session
+    print(Fore.MAGENTA + Style.BRIGHT + f"🍅 Starting your {timer}-minute Pomodoro session. Focus mode: ON  🔒\n") ## this is the actual line for a full Pomodoro session
+    # print(Fore.MAGENTA + Style.BRIGHT + f"🍅 Starting your 10 seconds Pomodoro session. Focus mode: ON  🔒\n") ## to save time during demonstration video, this line is uncommented
+    # for remaining in range(10, -1, -1): ## to save time during demonstration video, this line is uncommented
+    for remaining in range(timer * 60, -1, -1): ## this is the actual line for a full Pomodoro session
         mins, secs = divmod(remaining, 60)
         time_format = f"{mins:02d}:{secs:02d}"
         print(f"\r⏳ Time left: {time_format}", end="")
